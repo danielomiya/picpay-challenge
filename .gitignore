@@ -1,0 +1,9 @@
+.vscode/*
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+# Ignore generated CSVs
+data/*.csv
+!data/pokemon_types.csv
