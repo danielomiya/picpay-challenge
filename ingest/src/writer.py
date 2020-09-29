@@ -1,12 +1,20 @@
 """
-Helper class to write CSVs.
+Helper class to write CSVs
+
+Author: Daniel Omiya
 """
+
 from src.utils import sanitize
 
+
 class CSVWriter:
+    """
+    A CSV writer
+    """
+
     def __init__(self, should_write_headers=False):
         """
-        CSV writer
+        CSVWriter constructor
 
         Args:
             should_write_headers (bool, optional): flags whether to put headers. Defaults to False.

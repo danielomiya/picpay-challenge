@@ -2,11 +2,12 @@
 
 """
 Main script
+
+Author: Daniel Omiya
 """
 
 from src.client import PoGoAPIClient
 from src.config import ConfigLoader
-from src.utils import sanitize
 from src.writer import CSVWriter
 
 
