@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  ingest:
+    build: ingest
+    volumes:
+      - ./data:/data
+
+  query:
+    build: query
+    command: /usr/src/app/run.sh
+    depends_on:
+      - ingest
+    volumes:
+      - ./data:/data
+      - ./query/scripts:/usr/src/app
