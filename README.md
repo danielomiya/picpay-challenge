@@ -21,7 +21,8 @@ Its specification is described [here](docs/data_platform_junior_challenge.pdf).
 Since the application is 'dockerized', it's pretty simple to run it:
 
     $ git clone https://github.com/gwyddie/picpay-challenge
-    $ docker-compose up --build
+    $ docker-compose build  # this may take a few minutes
+    $ docker-compose up
 
 Just clone it and start docker-compose!
 
