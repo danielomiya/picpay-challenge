@@ -65,7 +65,7 @@ def test_get_fast_moves_ok(monkeypatch):
         expected = [
             {
                 'id': 1,  # auto-inc
-                'created_at': now.isoformat(' '),
+                'created_at': now.isoformat('T'),
                 'duration': 400,
                 'energy_delta': 6,
                 'name': 'Fury Cutter',
