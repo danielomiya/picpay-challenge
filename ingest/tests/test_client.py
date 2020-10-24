@@ -57,7 +57,7 @@ def test_get_fast_moves_ok(monkeypatch):
 
         class puredatetime:
             @classmethod
-            def now():
+            def today(cls):
                 return now
 
         m.setattr(datetime, 'datetime', puredatetime)

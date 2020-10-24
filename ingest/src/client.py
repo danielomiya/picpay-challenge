@@ -4,7 +4,7 @@ Pokemon Go API client
 Author: Daniel Omiya
 """
 
-from datetime import datetime
+import datetime
 import itertools
 import requests
 
@@ -54,7 +54,7 @@ class PoGoAPIClient:
             function: function that adds extra info to origin records
         """
         seq = itertools.count(start=1)
-        now = datetime.today().isoformat('T')
+        now = datetime.datetime.today().isoformat('T')
 
         def _(move):
             del move['move_id']
